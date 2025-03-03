@@ -1,0 +1,36 @@
+name: genie
+channels:
+  - conda-forge
+  - pytorch
+  - nvidia
+  - defaults
+dependencies:
+  - python=3.12.3
+  - pip=24.0
+  - flask=3.0.3
+  - flask-socketio=5.3.6
+  - pandas=2.2.2
+  - pillow=10.3.0
+  - numpy=1.26.4
+  - openslide-python=1.3.1
+  - openslide=4.0.0
+  - zipfile-deflate64=0.2.0
+  - timm=0.9.12
+  - matplotlib=3.8.4
+  - h5py=3.11.0
+  - einops=0.7.0
+  - scipy=1.13.1
+  - scikit-learn=1.4.2
+  - transformers=4.44.0
+  - pytorch
+  - torchvision
+  - torchaudio
+  - torch-optimizer
+  - pip
+  - girder-client
+  - conda-forge::huggingface_hub=0.24.6
+  - gunicorn=23.0.0
+  - simple-websocket
+  - pip:
+      - opencv-python-headless
+      - girder-client-mount
