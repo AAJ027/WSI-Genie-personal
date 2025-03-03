@@ -11,7 +11,7 @@
 Clone and make config files from templates
 
 ```
-git clone --recurse-submodules https://github.com/pitt-cpace/milk.git
+git clone --recurse-submodules https://github.com/pitt-cpace/milk.git -- Clone Branch 86 : 86-pause-resume-and-cancel-processing-pipeline-from-ui (this branch works well, better than the previous 'main' branch
 cd milk
 cp dsa_custom_config/compose.datsetimports.yaml.example dsa_custom_config/compose.datsetimports.yaml
 ```
@@ -21,11 +21,9 @@ cp dsa_custom_config/compose.datsetimports.yaml.example dsa_custom_config/compos
 Backend
 
 ```
-conda env create -f backend-Windows-requirements/environment.yml
+conda env create -f backend-Windows-requirements/environment.yml 
 conda activate genie
-gunicorn -c backend/gunicorn.conf.py 'backend.app:app'
 ```
-
 
 ## Mac / Linux: 
 
@@ -34,21 +32,32 @@ Backend
 ```
 conda env create -f backend-Mac-requirements/environment.yml
 conda activate genie
-gunicorn -c backend/gunicorn.conf.py 'backend.app:app'
+
 ```
 
 
 
+# Install Docker:
 
 ## Download Docker: Select the right version Mac/Linux/Windows: 
 
 ```
 https://www.docker.com/products/docker-desktop/
+
+export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
+```
+
+## Launch the APP: 
+
+```
+DSA_USER=$(id -u):$(id -g) docker compose --profile dev up --watch
+
 ```
 
 
 
-Frontend
+
+# Frontend
 
 ```
 cd frontend
