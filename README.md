@@ -46,7 +46,7 @@ https://www.docker.com/products/docker-desktop/
 
 ```
 
-# Terminal - set-up path for Docker:
+## Terminal - set-up path for Docker:
 
 ```
 export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
