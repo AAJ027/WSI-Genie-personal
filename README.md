@@ -44,6 +44,11 @@ conda activate genie
 ```
 https://www.docker.com/products/docker-desktop/
 
+```
+
+# Terminal - set-up path for the Docker:
+
+```
 export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
 ```
 
