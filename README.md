@@ -37,7 +37,7 @@ conda activate genie
 
 
 
-# Install Docker:
+## Install Docker:
 
 ## Download Docker: Select the right version Mac/Linux/Windows: 
 
